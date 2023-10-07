@@ -1,4 +1,3 @@
-import math
 UserAnswer = str(input("Виберіть дію з числами:\n 1. +\n 2. -\n 3. *\n 4. /\n 5. корінь\n 6. степінь\n "))
 a = int(input("Введіть перше чило: "))
 b = int(input("Введіть друге чило: "))
@@ -19,3 +18,9 @@ match UserAnswer:
         FirstPowerOfNumber = int(input("Введіть степінь для першого числа: "))
         SecondPowerOfNumber = int(input("Введіть степінь для першого числа: "))
         print("Степінь першого числа = {}, Степінь другого числа = {}".format(a**FirstPowerOfNumber, b**SecondPowerOfNumber))
+    case _:
+        print("Такої команди не існує")
+
+
+
+
