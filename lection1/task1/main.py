@@ -1,0 +1,1 @@
+print("Danya\nVasilega")
