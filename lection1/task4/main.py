@@ -1,25 +1,23 @@
-UserAnswer = str(input("Виберіть дію з числами:\n 1. +\n 2. -\n 3. *\n 4. /\n 5. корінь\n 6. степінь\n "))
-a = int(input("Введіть перше чило: "))
-b = int(input("Введіть друге чило: "))
+UserAnswer = str(input("Choose an orerate with numbers:\n 1. +\n 2. -\n 3. *\n 4. /\n 5. square root\n 6. power\n "))
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
 
 match UserAnswer:
     case "1":
-        print("Результат = ", a+b)
+        print("Result = ", a+b)
     case "2":
-        print("Результат = ", a-b)
+        print("Result = ", a-b)
     case "3":
-        print("Результат = ", a*b)
+        print("Result = ", a*b)
     case "4":
-        print("Результат = ", a/b)
+        print("Result = ", a/b)
     case "5":
-        print("Корінь першого числа = {}, Корінь другого числа = {}".format(
+        print("The square root of the first number = {}, The square root of the second number = {}".format(
             a**0.5, b**0.5))
     case "6":
-        FirstPowerOfNumber = int(input("Введіть степінь для першого числа: "))
-        SecondPowerOfNumber = int(input("Введіть степінь для першого числа: "))
-        print("Степінь першого числа = {}, Степінь другого числа = {}".format(a**FirstPowerOfNumber, b**SecondPowerOfNumber))
-    case _:
-        print("Такої команди не існує")
+        FirstPowerOfNumber = int(input("Enter the power for the first number: "))
+        SecondPowerOfNumber = int(input("Enter the power for the second number: "))
+        print("Power of the first number = {}, Power of the second number = {}".format(a**FirstPowerOfNumber, b**SecondPowerOfNumber))
 
 
 
